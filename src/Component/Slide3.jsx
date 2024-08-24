@@ -4,7 +4,7 @@ import { FaPhoneAlt } from "react-icons/fa";
 import { IoMdMail } from "react-icons/io";
 import TestimonialCard from "./TestimonialCard.jsx";
 import Questions from "./Questions";
-import Vehical1 from "../assets/Vehical.png";
+import Vehical1 from "../assets/vehical.png";
 import Vehical2 from "../assets/Vehical2.png";
 import CurvedLine from "../assets/CurvedLine.png";
 import CenterLine from "../assets/CenterLine.png";
