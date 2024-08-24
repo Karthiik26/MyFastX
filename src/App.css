@@ -1,0 +1,16 @@
+.half-border::after {
+    content: '';
+    display: block;
+    width: 30%;
+    height: 4px;
+    background-color: #52ce7f; 
+    margin-top: 7px; 
+  }
+.half-border2::after {
+    content: '';
+    display: block;
+    width: 28%;
+    height: 4px;
+    background-color: #52ce7f; 
+    margin-top: 7px; 
+  }
