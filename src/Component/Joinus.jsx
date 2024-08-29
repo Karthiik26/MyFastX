@@ -3,7 +3,7 @@ import React from "react";
 const Joinus = () => {
   return (
     <>
-      <div className=" text-xs w-auto h-[406px] bg-[#F2FAF5] flex justify-center items-center flex-col gap-10">
+      <div className="hidden text-xs w-auto h-[406px] bg-[#F2FAF5] md:flex justify-center items-center flex-col gap-10">
         <div className="flex justify-center items-center flex-col gap-6">
           <div className="text-green-600 font-bold ">
             Drive Your Succes With MyFastx

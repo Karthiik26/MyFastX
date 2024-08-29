@@ -41,23 +41,23 @@ const Slide1 = () => {
 
   return (
     <>
-      <div className="flex md:flex-row flex-col gap-4 p-6 md:px-20 pt-8 ">
-        <div className="md:w-[396px] w-auto h-[545px] bg-[#F8F8F8] rounded-xl p-10 text-center">
+      <div className="flex md:flex-row flex-col gap-4 md:px-20 pt-0 ">
+        <div className="md:w-[396px] h-[570px] bg-[#F8F8F8] md:rounded-xl p-10 text-center">
           <img
             src={TruckImageAddress}
             alt="Image Not Found"
             width={"292px"}
             height={"219px"}
           />
-          <div className="flex flex-col mt-8 gap-5">
-            <div className="font-bold text-lg">
+          <div className="flex flex-col mt-14 gap-5 text-[13px] ">
+            <div className="font-bold md:text-lg">
               Welcome to MyFast<span className="text-green-500">X</span>{" "}
               <span className="text-green-500">Partner</span>
             </div>
-            <div className="text-green-500 font-bold">
+            <div className="text-green-500 text-[12px] font-bold md:text-[16px]">
               Quick & Reliable Delivery and Logistics Solution
             </div>
-            <div className="text-slate-800 font-sans text-[14px] w-[300px]">
+            <div className="text-slate-800 font-sans  md:text-[14px] md:w-[300px]">
               At MyFastX, we are revolutionizing the delivery and logistics
               industry by providing swift, dependable services to our clients.
               Our mission is to ensure every package reaches its destination on
@@ -67,35 +67,40 @@ const Slide1 = () => {
         </div>
 
         <div className="flex flex-col gap-4">
-          <div className="md:w-[713px] w-auto h-[376px] bg-[#F8F8F8] rounded-xl">
-            <img src={linesimage} alt="Image Not Found" />
-            <div className="px-7 pt-4 flex gap-2 flex-col text-[13px]">
-              <div className="text-green-500 text-[13px] font-semibold tracking-wide">
+          <div className="flex-1 h-[376px] bg-[#F8F8F8] md:rounded-xl">
+            <img
+              src={linesimage}
+              className="max-[320px]:w-auto max-[320px]:h-36"
+              alt="Image Not Found"
+            />
+            <div className="px-7 md:px-10 pt-4 flex gap-3 flex-col md:text-[13px]">
+              <div className="text-green-500 text-[11px] md:text-[13px] font-semibold tracking-wide">
                 Drive Your Succes with MyFastx
               </div>
-              <div className="text-lg font-bold font-[Poppins]">
+              <div className="md:text-[22px] text-sm font-bold font-[Poppins]">
                 Join Us as a Partner Driver
               </div>
-              <div>
+              <div className="text-[10.1px] md:text-[16px] md:mr-32  ">
                 Are you a vehicle owner looking for new opportunities? Join
                 MyFastX today and become part of a dynamic network of drivers.
                 With us, you’ll enjoy flexible work hours, competitive earnings,
                 and the satisfaction of delivering smiles across the city
               </div>
-              <div className="mt-3">
-                <button className="px-6 py-2 bg-black text-white rounded-lg">
+              <div className="md:mt-3 mt-2.5 -ml-0.5 pb-8 md:pb-2">
+                <button className="md:px-6 px-3 py-1.5 md:py-2 md:text-[12px] text-[10px] bg-black text-white rounded-lg">
                   Register now for just Rs. 999!
                 </button>
               </div>
             </div>
           </div>
 
-          <div className="md:flex md:flex-row gap-4 grid grid-cols-2 ">
+          <div className="md:flex md:flex-row gap-4 grid grid-cols-2 p-3">
             {FourDivLoop.map((data, index) => (
               <div
                 key={index}
-                className="bg-[#F2FAF5] text-black rounded-xl p-4 flex flex-col md:items-start items-center text-center md:text-left "
+                className="bg-[#F2FAF5] text-black rounded-xl p-3 flex flex-col md:items-start items-center text-center md:text-left "
               >
+                <div className="text-left">
                 <img
                   src={data?.ImageUrl}
                   width="44"
@@ -103,11 +108,12 @@ const Slide1 = () => {
                   alt={data?.Title}
                   className=""
                 />
-                <div className=" text-xs font-semibold mt-2.5">
-                  {data?.Title}
-                </div>
-                <div className="text-xs mt-1 font-semibold">
-                  {data?.Details}
+                  <div className="md:text-xs text-[10px] font-semibold mt-2.5 text-green-500">
+                    {data?.Title}
+                  </div>
+                  <div className="md:text-xs text-[10px] mt-1 font-semibold">
+                    {data?.Details}
+                  </div>
                 </div>
               </div>
             ))}

@@ -6,7 +6,7 @@ import Joinus from "../Component/Joinus";
 
 const Main = () => {
   return (
-    <div>
+    <div className="overflow-hidden md:overflow-auto" >
       <Slide1 />
       <Slide2 />
       <Slide3 />

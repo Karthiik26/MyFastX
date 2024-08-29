@@ -1,7 +1,7 @@
 import React from "react";
 import "../App.css";
-import lineImage from '../../public/image2.png'
-import lineImage2 from '../../public/image3.png'
+import lineImage from "../../public/image2.png";
+import lineImage2 from "../../public/image3.png";
 
 const Slide2 = () => {
   const car =
@@ -13,29 +13,27 @@ const Slide2 = () => {
 
   return (
     <>
-      <div className="flex flex-row gap-8 px-20 py-20 h-[650px]">
+      <div className="flex flex-row justify-between gap-8 px-4 md:px-20 py-4 md:py-20 h-[400px] md:h-[650px] overflow-hidden md:overflow-none ">
         <div>
           <div>
-            <div className="px-1 w-[140px] py-0.5 text-center text-sm bg-[#F8F8F8] font-bold border-l-2 border-l-green-500">
+            <div className="px-1 md:w-[140px] w-[100px] py-0.5 text-center text-[10.5px] md:text-sm bg-[#F8F8F8] font-bold border-l-2 border-l-green-500">
               How It Is Works
             </div>
-            <div className="my-5 w-[500px] text-3xl font-bold half-border">
+            <div className="mb-5 mt-2.5 md:my-5 md:w-[500px] w-[250px] text-[16px] md:text-3xl font-bold half-border">
               Simple Steps To Get Started
             </div>
           </div>
 
-          <div className="flex flex-col gap-14 mt-14 justify-center  ml-3">
-            <div className="flex flex-row justify-center items-center gap-10">
-              <div className="border-2 w-14 flex items-center justify-center h-14 border-dotted rounded-full ">
+          <div className="flex flex-col md:gap-14 gap-6 md:mt-14 mt-5 justify-center md:ml-3">
+            <div className="flex flex-row md:justify-center gap-4 items-center md:gap-10">
+              <div className="border-2 md:w-14 w-10 h-10 flex items-center justify-center md:h-14 border-dotted rounded-full ">
                 <img
                   src={user}
-                  width={"40px"}
-                  height={"40px"}
-                  className="bg-slate-100 rounded-full p-[5px]"
+                  className="bg-slate-100 rounded-full p-[5px] w-[30px] h-[30px] md:w-[40px] md:h-[40px] "
                   alt=""
                 />
               </div>
-              <div className="bg-[#F8F8F8] w-[430px] h-auto px-6 py-3 rounded-lg text-sm font-semibold">
+              <div className="bg-[#F8F8F8] md:w-[430px] w-[220px] h-auto md:px-6 md:py-3 px-3.5 py-2 rounded-lg text-[10.5px] md:text-sm font-semibold">
                 <div className="text-green-600 mb-2"> Register Online</div>
                 <div>
                   Fill out our easy online application form and pay the
@@ -44,8 +42,8 @@ const Slide2 = () => {
               </div>
             </div>
 
-            <div className="flex flex-row justify-center items-center gap-10">
-              <div className="border-2 w-14 flex items-center justify-center h-14 border-dotted rounded-full ">
+            <div className="flex flex-row md:justify-center gap-4 items-center md:gap-10">
+              <div className="border-2 md:w-14 w-10 h-10 flex items-center justify-center md:h-14 border-dotted rounded-full ">
                 <img
                   src={verify}
                   width={"40px"}
@@ -54,7 +52,7 @@ const Slide2 = () => {
                   className="bg-slate-100 p-[5px] rounded-full"
                 />
               </div>
-              <div className="bg-[#F8F8F8] w-[430px] h-auto px-6 py-3 rounded-lg text-sm font-semibold">
+              <div className="bg-[#F8F8F8] md:w-[430px] w-[220px] h-auto md:px-6 md:py-3 px-3.5 py-2 rounded-lg text-[10.5px] md:text-sm font-semibold">
                 <div className="text-green-600 mb-2">Get Verified</div>
                 <div>
                   Complete the verification process to ensure you meet our
@@ -63,8 +61,8 @@ const Slide2 = () => {
               </div>
             </div>
 
-            <div className="flex flex-row justify-center items-center gap-10">
-              <div className="border-2 w-14 flex items-center justify-center h-14 border-dotted rounded-full ">
+            <div className="flex flex-row md:justify-center gap-4 items-center md:gap-10">
+              <div className="border-2 md:w-14 w-10 h-10 flex items-center justify-center md:h-14 border-dotted rounded-full ">
                 <img
                   src={car}
                   width={"40px"}
@@ -73,7 +71,7 @@ const Slide2 = () => {
                   className="bg-slate-100 p-[5px]  rounded-full"
                 />
               </div>
-              <div className="bg-[#F8F8F8] w-[430px] h-auto px-6 py-3 rounded-lg text-sm font-semibold">
+              <div className="bg-[#F8F8F8] md:w-[430px] w-[220px] h-auto md:px-6 md:py-3 px-3.5 py-2 rounded-lg text-[10.5px] md:text-sm font-semibold">
                 <div className="text-green-600 mb-2">Start Driving</div>
                 <div>
                   Once approved, start accepting delivery requests and earn
@@ -83,21 +81,21 @@ const Slide2 = () => {
             </div>
           </div>
 
-          <div className="relative -top-[440px] left-10 -z-30" >
-            <img src={lineImage} width={'2px'} alt="" />
+          <div className="relative md:-top-[440px] -top-[300px] left-5 md:left-10 -z-30">
+            <img src={lineImage} className="md:w-[2px] w-[1.4px]" alt="" />
           </div>
-          <div className="relative -top-[750px] left-14 -z-30" >
-            <img src={lineImage2} width={'50px'} alt="" />
+          <div className="relative md:-top-[750px] -top-[520px] left-10 md:left-14 -z-30">
+            <img src={lineImage2} className="md:w-[50px] w-[30px]" alt="" />
           </div>
-          <div className="relative -top-[605px] left-14 -z-30" >
-            <img src={lineImage2} width={'50px'} alt="" />
+          <div className="relative md:-top-[605px] -top-[415px] left-8 md:left-14 -z-30">
+            <img src={lineImage2} className="md:w-[50px] w-[30px]" alt="" />
           </div>
-          <div className="relative -top-[455px] left-14 -z-30" >
-            <img src={lineImage2} width={'50px'} alt="" />
+          <div className="relative md:-top-[455px] -top-[320px] left-8 md:left-14 -z-30">
+            <img src={lineImage2} className="md:w-[50px] w-[30px]" alt="" />
           </div>
         </div>
 
-        <div className="flex justify-center mt-20">
+        <div className="md:flex justify-center mt-20 hidden">
           <iframe
             width={"571px"}
             height={"457px"}

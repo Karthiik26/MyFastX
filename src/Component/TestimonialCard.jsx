@@ -52,25 +52,25 @@ const TestimonialCard = () => {
     testimonials[currentIndex];
 
   return (
-    <div className="h-[357px] w-[530px] bg-green-50 p-9  rounded-2xl">
+    <div className="md:h-[357px] h-auto md:w-[530px] bg-green-50 px-6 pt-4 pb-2 md:rounded-2xl">
       {/* Profile Section */}
       <div className="flex items-center">
-        <img src={image} alt={name} className="w-16 h-16 rounded-full mr-4" />
+        <img src={image} alt={name} className="md:w-16 w-10 h-10 md:h-16 rounded-full mr-4" />
         <div>
-          <h3 className="text-lg font-bold">{name}</h3>
-          <p className="text-sm text-gray-600">{location}</p>
+          <h3 className="md:text-lg text-sm font-bold">{name}</h3>
+          <p className="md:text-sm text-xs text-gray-600">{location}</p>
         </div>
       </div>
       {/* Testimonial Text */}
-      <p className="mt-6 text-gray-800 ">“ {testimonial} “</p>
+      <p className="mt-6 text-gray-800 text-xs md:text-lg ">“ {testimonial} “</p>
       {/* Star Rating */}
-      <div className="mt-6 mb-6 flex">
+      <div className="md:mt-6 my-2 md:mb-6 flex">
         {[...Array(rating)].map((_, i) => (
           <svg
             key={i}
             xmlns="http://www.w3.org/2000/svg"
             fill="currentColor"
-            className="w-5 m-1 h-5 text-yellow-500"
+            className="md:w-5 w-3 h-3 m-1 md:h-5 text-yellow-500"
             viewBox="0 0 24 24"
           >
             <path d="M12 .587l3.668 7.571L24 9.748l-6 5.854 1.415 8.264L12 18.896l-7.415 4.97L6 15.602 0 9.748l8.332-1.59L12 .587z" />
@@ -78,24 +78,22 @@ const TestimonialCard = () => {
         ))}
       </div>
       {/* Navigation Dots and Arrows */}
-      <div className="mt-6 flex items-center justify-between">
-        {/* Dots */}
-        <div className="flex space-x-1 my-4 px-6 py-4 bg-white rounded-lg">
+      <div className="md:mt-6 flex items-center justify-between">
+        <div className="flex space-x-1 my-4 px-5 py-2.5 md:px-6 md:py-4 bg-white rounded-lg">
           {testimonials.map((_, i) => (
             <button
               key={i}
               onClick={() => setCurrentIndex(i)}
-              className={`h-2 w-2 rounded-full ${
+              className={`md:h-2 p-[3px] md:w-2 rounded-full ${
                 i === currentIndex ? "bg-green-500" : "bg-gray-300"
               }`}
             ></button>
           ))}
         </div>
-        {/* Arrows */}
         <div className="flex space-x-2">
           <button
             onClick={handlePrev}
-            className="p-2 cursor-pointer rounded-full bg-white shadow hover:bg-gray-100"
+            className="md:p-2 p-1.5 cursor-pointer rounded-full bg-white shadow hover:bg-gray-100"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -103,7 +101,7 @@ const TestimonialCard = () => {
               viewBox="0 0 24 24"
               strokeWidth={1.5}
               stroke="currentColor"
-              className="w-4 h-4"
+              className="md:w-4 w-3 h-3 md:h-4"
             >
               <path
                 strokeLinecap="round"
@@ -115,7 +113,7 @@ const TestimonialCard = () => {
 
           <button
             onClick={handleNext}
-            className="p-2 cursor-pointer rounded-full bg-white shadow hover:bg-gray-100"
+            className="md:p-2 p-1.5 cursor-pointer rounded-full bg-white shadow hover:bg-gray-100"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -123,7 +121,7 @@ const TestimonialCard = () => {
               viewBox="0 0 24 24"
               strokeWidth={1.5}
               stroke="currentColor"
-              className="w-4 h-4"
+              className="md:w-4 w-3 h-3 md:h-4"
             >
               <path
                 strokeLinecap="round"

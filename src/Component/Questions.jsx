@@ -12,13 +12,13 @@ const QueData = [
 
 const Questions = () => {
   return (
-    <div className="w-[500px] bg-[#FCFCFC] rounded-2xl shadow-sm mt-14">
+    <div className="md:w-[500px] w-[270px] bg-[#FCFCFC] rounded-2xl shadow-sm md:mt-14">
       {QueData.map((faq, index) => (
         <div
           key={index}
           className="flex justify-between items-center p-2 m-1 border-b hover:bg-slate-50 cursor-pointer"
         >
-          <span className="text-sm font-medium">{faq}</span>
+          <span className="md:text-sm text-[12px] font-medium">{faq}</span>
           <MdKeyboardArrowRight />
         </div>
       ))}
